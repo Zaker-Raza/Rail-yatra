@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rail Yatra — Payment</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="brand">
+      <span class="logo">🚆</span>
+      <div class="brand-text">
+        <h1>Rail <span>Yatra</span></h1>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="booking.html">Booking</a>
+      <a href="payment.html" class="active">Payment</a>
+      <a href="ticket.html">Ticket</a>
+    </nav>
+  </header>
+
+  <main class="container payment-page">
+    <section class="panel pay-panel">
+      <div class="pay-wrap">
+        <div class="pay-left">
+          <h2>Payment</h2>
+          <p class="muted">Demo payment UI — no real transactions</p>
+
+          <div class="pay-grid">
+            <div class="pay-card">📱 Paytm</div>
+            <div class="pay-card">💰 Google Pay</div>
+            <div class="pay-card">💳 Visa / Card</div>
+          </div>
+
+          <div class="fare">
+            <div class="fare-row"><span>Base fare</span><strong>₹ 420</strong></div>
+            <div class="fare-row"><span>GST (5%)</span><strong>₹ 21</strong></div>
+            <div class="fare-row total"><span>Total</span><strong>₹ 441</strong></div>
+          </div>
+
+          <div class="form-row">
+            <a class="btn outline" href="booking.html">← Back</a>
+            <a class="btn primary" href="ticket.html">Pay & Generate Ticket →</a>
+          </div>
+        </div>
+
+        <aside class="pay-right">
+          <div class="ticket-preview">
+            <div class="tp-head">
+              <div class="logo-mini">🚆 Rail Yatra</div>
+              <div class="pnr">PNR: RY <span>7854639</span></div>
+            </div>
+            <div class="tp-body">
+              <div class="tp-left">
+                <div class="big">Rajdhani Express</div>
+                <div><strong>From</strong> Mumbai</div>
+                <div><strong>To</strong> Delhi</div>
+                <div class="muted">Date: 15 Sep 2025</div>
+              </div>
+              <div class="tp-right">
+                <div class="qrbox"></div>
+              </div>
+            </div>
+            <div class="tp-foot muted">Passenger: Mr. Zaker • Seat: B2-45</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Rail Yatra</p>
+  </footer>
+</body>
+</html>

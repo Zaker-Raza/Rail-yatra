@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rail Yatra — Booking</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="brand">
+      <span class="logo">🚆</span>
+      <div class="brand-text">
+        <h1>Rail <span>Yatra</span></h1>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="payment.html">Payment</a>
+      <a href="ticket.html">Ticket</a>
+    </nav>
+  </header>
+
+  <main class="container booking-page">
+    <section class="panel booking-card">
+      <h2 class="center">Book Your Train</h2>
+
+      <form class="booking-form" action="payment.html" method="get" novalidate>
+        <div class="row">
+          <label>
+            <span class="lbl">From</span>
+            <select name="from" required>
+              <option value="">Select city</option>
+              <option>Mumbai</option><option>Pune</option><option>Delhi</option><option>Hyderabad</option>
+              <option>Bengaluru</option><option>Jaipur</option><option>Lucknow</option><option>Ahmedabad</option>
+            </select>
+          </label>
+
+          <label>
+            <span class="lbl">To</span>
+            <select name="to" required>
+              <option value="">Select city</option>
+              <option>Delhi</option><option>Howrah</option><option>Kolkata</option><option>Chennai</option>
+              <option>Bhopal</option><option>Indore</option><option>Varanasi</option><option>Patna</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="centered">
+          <span class="lbl">Train</span>
+          <select class="big-select" name="train" required>
+            <option value="">— Select Train —</option>
+            <option>Rajdhani Express</option>
+            <option>Shatabdi Express</option>
+            <option>Duronto Express</option>
+            <option>Tejas Express</option>
+            <option>Garib Rath Express</option>
+            <option>Intercity Express</option>
+            <option>Superfast Express</option>
+          </select>
+        </label>
+
+        <div class="row">
+          <label>
+            <span class="lbl">Class</span>
+            <select name="class" required>
+              <option value="">Select class</option>
+              <option>AC First Class</option><option>AC 2 Tier</option><option>AC 3 Tier</option>
+              <option>Sleeper</option><option>Chair Car</option><option>General</option>
+            </select>
+          </label>
+
+          <label>
+            <span class="lbl">Journey Date</span>
+            <input type="date" name="date" required>
+          </label>
+        </div>
+
+        <div class="subhead">Passenger(s)</div>
+
+        <div class="pass-list">
+          <div class="pass-row">
+            <input type="text" name="p1name" placeholder="Passenger 1 name" required>
+            <input type="number" name="p1age" placeholder="Age" min="1" required>
+          </div>
+          <div class="pass-row">
+            <input type="text" name="p2name" placeholder="Passenger 2 name (optional)">
+            <input type="number" name="p2age" placeholder="Age">
+          </div>
+          <div class="pass-row">
+            <input type="text" name="p3name" placeholder="Passenger 3 name (optional)">
+            <input type="number" name="p3age" placeholder="Age">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <a class="btn outline" href="login.html">← Back</a>
+          <button class="btn primary" type="submit">Proceed to Payment →</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Rail Yatra</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rail Yatra — Login</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="brand">
+      <span class="logo">🚆</span>
+      <div class="brand-text">
+        <h1>Rail <span>Yatra</span></h1>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="booking.html">Booking</a>
+      <a href="payment.html">Payment</a>
+      <a href="ticket.html">Ticket</a>
+    </nav>
+  </header>
+
+  <main class="container form-page">
+    <section class="panel card-panel">
+      <div class="card-left">
+        <h2>Welcome Back</h2>
+        <p class="muted">Login to access bookings and faster checkout.</p>
+
+        <form class="form" action="booking.html" method="get" novalidate>
+          <label class="field">
+            <span>Username</span>
+            <input type="text" name="username" placeholder="Enter username" required>
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" placeholder="Enter password" required>
+          </label>
+
+          <div class="form-row">
+            <a class="btn outline" href="index.html">← Back</a>
+            <button class="btn primary" type="submit">Login & Continue →</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="card-right">
+        <h3>Why login?</h3>
+        <ul class="why-list">
+          <li>Save passenger profile</li>
+          <li>Quick re-booking</li>
+          <li>Booking history</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Rail Yatra</p>
+  </footer>
+</body>
+</html>

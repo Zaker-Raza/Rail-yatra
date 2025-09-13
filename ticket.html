@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rail Yatra — Ticket</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="brand">
+      <span class="logo">🚆</span>
+      <div class="brand-text"><h1>Rail <span>Yatra</span></h1></div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="booking.html">Booking</a>
+      <a href="payment.html">Payment</a>
+      <a href="ticket.html" class="active">Ticket</a>
+    </nav>
+  </header>
+
+  <main class="container ticket-page">
+    <section class="panel final-ticket">
+      <h2 class="center">E-Ticket</h2>
+
+      <article class="ticket-card large">
+        <div class="tc-head">
+          <div class="ir">Indian Railways • Rail Yatra</div>
+          <div class="pnr big">PNR: RY7854639</div>
+        </div>
+
+        <div class="tc-body">
+          <div>
+            <div class="big">Rajdhani Express (12951)</div>
+            <div class="muted">AC 2 Tier • Coach B2 • Seat 45</div>
+            <div class="muted">Date / Time: 15 Sep 2025 • 20:15</div>
+          </div>
+
+          <div>
+            <div><strong>From:</strong> Mumbai CSMT</div>
+            <div><strong>To:</strong> New Delhi</div>
+            <div><strong>Passenger:</strong> Zaker Raza (21)</div>
+            <div><strong>Txn ID:</strong> TXN78546392</div>
+          </div>
+
+          <div class="qrcol">
+            <div class="qrbox big-qr"></div>
+            <small class="muted">Scan at gate</small>
+          </div>
+        </div>
+
+        <div class="tc-foot muted">Status: Confirmed ✅</div>
+      </article>
+
+      <div class="ticket-actions">
+        <a class="btn outline" href="payment.html">← Back</a>
+        <a class="btn primary" href="index.html">Finish</a>
+        <!-- To save as PDF: use browser Print -> Save as PDF -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Rail Yatra</p>
+  </footer>
+</body>
+</html>
